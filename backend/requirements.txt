@@ -1,0 +1,15 @@
+fitparse
+matplotlib
+geopandas
+contextily
+pyproj
+shapely
+scipy
+pillow
+fastapi
+uvicorn
+rq
+redis
+python-dotenv
+ffmpeg-python
+python-multipart

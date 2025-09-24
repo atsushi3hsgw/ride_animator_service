@@ -1,0 +1,25 @@
+services:
+  app:
+    build:
+      context: ".."
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/app
+    environment:
+      - LOG_LEVEL=DEBUG
+      - REDIS_HOST=localhost
+      - REDIS_PORT=6379
+      - REDIS_DB=0
+      - VIDEO_FILES_DIR=/app/storage/videos
+      - FIT_FILES_DIR=/app/storage/fits
+      - THUMBNAIL_FILES_DIR=/app/storage/thumbnails
+      - API_BASE_HOST=http://localhost
+      - API_BASE_PORT=8000
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+    command: bash -c "
+      chmod +x /app/.devcontainer/startup.sh && \
+      /app/.devcontainer/startup.sh && \
+      sleep infinity
+      "
