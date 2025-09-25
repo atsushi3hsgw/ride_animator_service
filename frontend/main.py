@@ -98,7 +98,7 @@ else:
 # -------------------------------
 st.header("Upload FIT File")
 
-st.markdown("**Note:** Maximum file size is **20MB**. Only `.fit` files are accepted.")
+st.markdown("**Note:** Maximum file size is **2MB**. Only `.fit` files are accepted.")
 uploaded_file = st.file_uploader("Select a FIT file", type=["fit"])
 if st.button("📤 Upload") and uploaded_file:
     try:

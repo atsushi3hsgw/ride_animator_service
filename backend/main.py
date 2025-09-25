@@ -22,7 +22,7 @@ logger = get_logger(__name__)
 redis = get_redis_client()
 queue = Queue("default", connection=redis)
 
-MAX_UPLOAD_SIZE = 10 * 1024 * 1024  # 10MB
+MAX_UPLOAD_SIZE = 2 * 1024 * 1024  # 2MB
 
 class LimitUploadSizeMiddleware(BaseHTTPMiddleware):
     """

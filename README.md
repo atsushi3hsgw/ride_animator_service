@@ -42,7 +42,7 @@ This launches Redis, FastAPI, Streamlit, and the RQ worker in a single container
 
 1. Open http://localhost:8501 in your browser
 
-1. Upload a .fit file (max 20MB)
+1. Upload a .fit file (max 2MB)
 
 1. Customize animation parameters
 
