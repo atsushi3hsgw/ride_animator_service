@@ -134,7 +134,7 @@ if status in ["upload_done", "generate_error", "generate_done"]:
         zoom = st.selectbox("Zoom", [12, 13, 14], index=1)
     with col2:
         fps = st.selectbox("FPS", [10, 30, 60], index=1)
-        step_frame = st.selectbox("Step Frame", [1, 30, 60], index=1)
+        step_frame = st.selectbox("Step Frame", [30, 60, 120], index=1)
     with col3:
         dpi = st.selectbox("DPI", [50, 100, 150], index=1)
         no_smoothing = st.checkbox("Disable Elevation Smoothing", value=False)
