@@ -110,6 +110,22 @@ This tool can also be run as a command line tool.
       --overlay-style bottom-right
 ```
 
+### GIF Output
+In addition to MP4 and WebM, the tool also supports animated GIF output using PillowWriter.
+
+To generate a GIF:
+
+```bash
+python ride_route_animator.py -i activity.fit -o ride.gif
+```
+
+Post-process with [gifsicle](https://www.lcdf.org/gifsicle/) for compression:
+
+```bash
+gifsicle -O3 ride.gif -o ride_optimized.gif
+```
+
+
 ---
 
 ## Development Tools
